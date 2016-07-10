@@ -1,442 +1,1380 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    
+
 <head>
-	<title>Arijit Chatterjee</title>
-	<!--fonts-->
-		<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<!--//fonts-->
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- for-mobile-apps -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Website of Arijit Chatterjee"/>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Arijit Chatterjee, Ron Chatterjee, Technology, Computer Science" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->
-	<!-- js -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- js -->
-	<!-- start-smooth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smooth-scrolling -->
+	
+	
+	 <!-- Metas -->
+        <meta charset="utf-8">
+        <title>Arijit Chatterjee</title>
+        <meta name="description" content="Online CV of Arijit Chatterjee">
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<meta name="keywords" content="Arijit Chatterjee, Ron Chatterjee, Technology, Computer Science" />
 
-</head>
-<body>
-<!-- banner -->
-<div class="banner" id="home">
-	<div class="container"> 
-		<div class="top-header row">
-			<script src="js/classie.js"></script>
-			<!--top-nav---->
-			<div class="top-nav">
-				<div class="nav-icon">
-					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
-				</div>
-				<div class="box" id="box">
-					<div class="box_content">        					                         
-						<div class="box_content_center">
-							<div class="form_content">
-								<div class="menu_box_list">
-									<ul>
-										<li><a class="scroll" href="#home"><span>home</span></a></li>
-										<li><a class="scroll" href="#about"><span>about</span></a></li>
-                                        <li><a class="scroll" href="#skills"><span>skills</span></a></li>
-										<li><a class="scroll" href="#education"><span>education</span></a></li>
-                                        <li><a class="scroll" href="#work"><span>work</span></a></li>
-										<li><a class="scroll" href="#process"><span>process</span></a></li>
-										<div class="clearfix"> </div>
-									</ul>
-								</div>
-								<a class="boxclose" id="boxclose"> <span> </span></a>
-							</div>                                  
-						</div> 	
-					</div> 
-				</div>       	  
-			</div>
-			<!---start-click-drop-down-menu----->
-			        <!----start-dropdown--->
-			         <script type="text/javascript">
-						var $ = jQuery.noConflict();
-							$(function() {
-								$('#activator').click(function(){
-									$('#box').animate({'top':'0px'},900);
-								});
-								$('#boxclose').click(function(){
-								$('#box').animate({'top':'-1000px'},900);
-								});
-							});
-							$(document).ready(function(){
-							//Hide (Collapse) the toggle containers on load
-							$(".toggle_container").hide(); 
-							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-							$(".trigger").click(function(){
-								$(this).toggleClass("active").next().slideToggle("slow");
-									return false; //Prevent the browser jump to the link anchor
-							});
-												
-						});
-					</script>
-			<!---//End-click-drop-down-menu----->
-			<div class="clearfix"> </div>
-		</div>
-		<div class="banner-info">
-			<div class="banner-left">
-				<img src="images/Arijit.jpg" class="img-circle" alt=""/>
-			</div>
-			<div class="banner-right">
-				<h2>Arijit Chatterjee</h2>
-				<div class="border"></div>
-				<h2>Tech Enthusiast</h2>
-				<a href="Resume.pdf">DOWNLOAD MY RESUME</a>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+
+		
+		
+		
+
+		
+		
+		
+
+
+		<!-- Css -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all">
+		<link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all">
+		<link href="css/magnific-popup.css" type="text/css" rel="stylesheet" media="all" />
+		<link href="css/font.css" rel="stylesheet" type="text/css"  media="all">
+		<link href="css/fontello.css" rel="stylesheet" type="text/css"  media="all">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/main.css"  rel="stylesheet" type="text/css" media="all"/>
+		
+		
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+    </head>
+    <body>
+	
+	
+	
+	
+
+<!-- Preloader -->
+<div id="loader">
+		<!-- Preloader inner -->
+  <div id="loaderInner">
+	<div class="spinner"></div>
+  </div>
+<!-- End preloader inner -->
 </div>
-<!--/header-banner-->
-<!--about-->
-<div class="about text-center" id="about">
+<!-- End preloader-->
+
+
+<!--Wrapper-->
+<div id="wrapper" class="margLTop  margLBottom">
+	
+
+	<!--Container-->
 	<div class="container">
-		<h3>ABOUT ME</h3>
-		<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-		<p>I am a second year student pursuing a BTech in Computer Science and Engineering from National Institute of Technology, Durgapur. I have a keen interest in all things technology. Open source software, web development along with algorithm analysis and competitive coding especially interest me .</p>
-		<ul>
-			<li><a class="fb" href="https://www.facebook.com/ArijitChatterjee13" target="_blank"></a></li>
-			<li><a class="twit" href="https://twitter.com/ronchatterjee" target="_blank"></a></li>
-			<li><a class="in" href="https://github.com/RonChatterjee"></a></li>
-			<!--<li><a class="drib" href="#"></a></li> -->
-			<li><a class="goog" href="https://plus.google.com/+ArijitChatterjee13" target="_blank"></a></li>
-			<!--<li><a class="pin" href="#"></a></li>-->
-		</ul>
-	</div>
-</div>
-<!--//about-->
-<div class="about-back"></div>
-<!--my skill-->
-<div class="my-skills text-center" id="skills">
-	<div class="container">
-		<h3>MY SKILLS</h3>
-		<div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
-		<div class="skill-grids">
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-1"></div>
-						<p>Photoshop</p>
-					</div>
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-2"></div>
-						<p>Html 5 / CSS 3</p>
-					</div>
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-3"></div>
-						<p>C/C++</p>
-					</div>
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-4"></div>
-						<p>JAVA</p>
-					</div>
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-5"></div>
-						<p>PYHTHON</p>
-					</div>
-					<div class="col-md-2 skills-grid text-center">
-						<div class="circle" id="circles-6"></div>
-						<p>PHP/SQL</p>
-					</div>
-					<div class="clearfix"> </div>
-				 <script type="text/javascript" src="js/circles.js"></script>
-					         <script>
-								var colors = [
-										['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
-									];
-								for (var i = 1; i <= 7; i++) {
-									var child = document.getElementById('circles-' + i),
-										percentage = 40 + (i * 10)%40;
-										
-									Circles.create({
-										id:         child.id,
-										percentage: percentage,
-										radius:     80,
-										width:      10,
-										number:   	percentage / 1,
-										text:       '%',
-										colors:     colors[i - 1]
-									});
-								}
+		
+		
+		
+		
+			<div class="row ">
+		
+		
+		
+		
+		<!--Left content-->
+		
+		<div class="col-md-3 nopr left-content">
+	
+	<!--Header-->
+	<header id="header">
+		
+
+		
+				
+					
+					<!--Main header-->
+					<div class="main-header">
+					
+					<!--Profile image-->
+					<figure class="img-profile">
+						<img src="img/profile.jpg" alt=""/>
 						
-				</script>
-		</div>
-	</div>	
-</div>
-<!--//my skill-->
-<div class="my-skill-back"></div>
-<!--education-->
-<div class="education text-center" id="education">
-	<div class="container">
-		<div class="edu-info">
-			<h3>EDUCATION</h3>
-		</div>
-		<div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
-		<div class="edu-grids">
-			<div class="col-md-4 edu-grid">
-				<p>2012</p><span>Matriculation</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>INDIAN CERTIFICATE OF SECONDARY EDUCATION</h3>
-					</div>
-                    <div class="edu-grid-info">
-                        <h4>DON BOSCO SCHOOL, LILUAH</h4>    
-				    </div>
-				</div>
-			</div>
-			<div class="col-md-4 edu-grid">
-				<p>2014</p><span>Intermediate/+2</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>INDIAN SCHOOL CERTIFICATE</h3>
-					</div>
-                    <div class="edu-grid-info">
-                        <h4>DON BOSCO SCHOOL, LILUAH</h4>    
-				    </div>
-				</div>
-			</div>
-			<div class="col-md-4 edu-grid">
-				<p>2014 - 2018</p><span>In Progress</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE and ENGINEERING</h3>
-					</div>
-					<div class="edu-grid-info">
-						<h4>NATIONAL INSTITUTE OF TECHNOLOGY, DURGAPUR</h4>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	
-</div>
-<!--//education-->
-<div class="strip-border"><p></p></div>
-<!--work-->
-<div class="work-experience text-center" id="work">
-	
-	<div class="container">
-		<div class="work-info">
-			<h3>WORK EXPERIENCE</h3>
-		</div>
-		<div class="strip text-center"><img src="images/work.png" alt=" "/></div>
-		<div class="work-grids">
-			<div class="col-md-4 w-grid">
-				<div class="work-grid">
-					<h3>October 2015 - Now</h3>
-					<div class="work-grid-info">
-						<h4>IIT BOMBAY</h4>
-						<h5>Intern at TBC Python under FOSSEE</h5>
-						<p>Achieved in coding solved examples of the book 'Design with Operational Amplifiers and Analog Integrated Circuits', by Sergio Franco, into an ipython notebook using various python libraries to perform scientific computations.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 w-grid">
-				<div class="work-grid">
-					<h3>2015 - Now</h3>
-					<div class="work-grid-info">
-						<h4>QUIZ INC. NIT Durgapur</h4>
-						<h5>Member</h5>
-                        <p>One of the developers and maintainers of <a href="http://www.quizinc.in">quizinc.in</a>, the website of QUIZ INC, the official quiz club of NIT Durgapur.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 w-grid">
-				<div class="work-grid">
-					<h3>2015 - Now</h3>
-					<div class="work-grid-info">
-						<h4>GNU/LINUX USERS' GROUP, NIT Durgapur</h4>
-						<h5>Core Member</h5>
-						<p>Core member of the GNU/LINUX USERS' GROUP of NIT, Durgapur.</p>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
+						<figcaption class="name-profile">
+							<span>Arijit Chatterjee <sup>&reg;</sup></span>
+						</figcaption>
+						
+					</figure>
+					<!--End profile image-->
+					
+					
+				
+							<!--Main navigation-->
+								<nav id="main-nav" class="main-nav clearfix tabbed">
 
-<!--portfolio
-<div class="gallery-section text-center" id="portfolio">
-	<div class="container">
-		<h3>PORTFOLIO</h3>
-		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
-		<p>You think water moves fast? You should see ice. It moves like it has a mind. 
-		Like it knows it killed the world once and got a taste for murder. After the avalanche, 
-		it took us a week to climb out. Now, I don't know exactly when we turned on each other, 
-		but I know that seven of us survived the slide and only five made it out. Now we took an 
-		oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, 
-		but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-		<div class="gallery-grids">
-			<div class="top-gallery">
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							<div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
-						</div>
-				</div></a>
-				<div class="clearfix"> </div>
-			</div>
-				<link rel="stylesheet" href="css/swipebox.css">
-				<script src="js/jquery.swipebox.min.js"></script> 
-					<script type="text/javascript">
-						jQuery(function($) {
-							$(".swipebox").swipebox();
-						});
-					</script>
-		</div>
-	</div>
-</div>
-<!--//portfolio-->
-<!--process-->
-<div class="process text-center" id="process">
-	<div class="container">
-		<h3>PROCESS</h3>
-		<div class="strip text-center"><img src="images/pro.png" alt=" "/></div>
-		<div class="process-girds">
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagea"></div>
-					<p>IDEA</p>
-					<img src="images/6.png" alt=""/>
+								<ul>
+									<li ><a href="#about"><i class="icon-user"></i>About</a></li>
+									<li><a  href="#portfolio"><i class="icon-camera"></i>Portfolio</a></li>
+									<li><a  href="#contact"><i class="icon-phone"></i>Contact</a></li>
+								</ul>
+
+								</nav>
+							<!--End main navigation-->
+				
+
+				
+		
 				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imageb"></div>
-					<p>CONCEPT</p>
-					<img class="pro-imga" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagec"></div>
-					<p>DESIGN</p>
-					<img class="pro-img" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imaged"></div>
-					<p>DEVELOP</p>
-					<img class="pro-imgb" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagee"></div>
-					<p>TEST</p>
-					<img src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagef"></div>
-					<p>LAUNCH</p>
+				<!--End main header-->
+				
+				<div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+					<ul class="social">
+					<li><a target = "_blank" href="https://www.facebook.com/ArijitChatterjee13"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://plus.google.com/+ArijitChatterjee13" target="_blank"><i class="icon-gplus"></i></a></li>
+					<li><a href="https://in.linkedin.com/in/arijit-chatterjee-36700b119" target = "_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="https://github.com/RonChatterjee" target="_blank"><i class="icon-github"></i></a></li>
+
+
+				</ul>
+				
+				<p>&copy; 2016 Arijit Chatterjee.</p>
 					
 				</div>
-			</div>
-			<div class="clearfix"></div>
+				
+				
+				
+
+		</header>
+		<!--End  header-->
+		
+		
 		</div>
-	</div>
-</div>
+		<!--End left content-->
+		
+		
+		
+			<!--Right content-->
+			<div class="col-md-9 right-content">
+		
 
 
-<!--//contact-->
-<div class="footer-top"></div>
-<!--resume-->
-<div class="resume text-center">
-	<div class="container">
-		<div class="strip text-center"><a href="#"><img src="images/down.png" alt=" "/></a></div>
-		<div class="down"><a href="Resume.pdf">Download My Resume</a></div>
-	</div>
+						<!--About Tab-->
+					<section id="about" class="bgWhite ofsInBottom">
+						
+						<!--About -->
+						<div class="about">
+						
+							<!--Main title-->
+							
+								<div class="main-title">
+									<h1>who am i</h1>
+									<div class="divider">
+											<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+</svg>
 </div>
-<!--//resume-->
-
-<!--footer-->
-<div class="footer">
-	<div class="container">
-		<p>&copy; 2015 Arijit Chatterjee</p>
-	</div>
-</div>
-<!--//footer-->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
+									</div>
+								</div>	
 								
-			$().UItoTop({ easingType: 'easeOutQuart' });
+							<!--End main title-->
+						
+						
+							
+						
+						<!--Content-->	
+						<div class="content">
+							
+							<!--Block content-->	
+							<div class="block-content margBSmall">
 								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-</body>
+							<div class=" profile margBSmall">
+                                <h1>Arijit Chatterjee</h1>
+                                <h3>Software Developer / Computer Science Engineering Student</h3>
+                            </div>
+
+							<!--Row-->	
+							<div class="row">
+								<div class="col-md-6">
+									<p>I am a third year student of Computer Science and Engineering studying at National Institute of Technology, Durgapur. Computing and its applications have held a life-long fascination for me and I am lucky enough to pursue a career in a field I am deeply passionate about.</p>
+								</div>
+								
+								
+								<div class="col-md-6">
+									<p>I am looking for internship opportunities which will provide me real world exposure, introduce me to new technologies and help me sharpen my technical skills as well as enhance my skillset. </p>
+								</div>
+							
+
+							</div>
+							<!--End row-->	
+							
+							</div>
+							<!--End block content-->	
+							
+							
+							
+							<!--Block content-->	
+							<div class="block-content">
+								
+								<div class="info">
+	                               
+									<!--Row-->	
+									<div class="row">
+										<div class="col-md-6">
+											
+											<ul class="info-list clearfix">
+												<li><span class="inf">Name </span>  <span class="value">Arijit Chatterjee</span></li>
+												<li><span class="inf">Date of birth</span>  <span class="value"> April 2, 1996 </span></li>
+												<li><span class="inf">Address</span>  <span class="value"> 5/C/4, T.N.Chatterjee Street, Kolkata , West Bengal, India - 700090</span></li>
+											</ul>
+											
+										</div>
+
+
+										<div class="col-md-6">
+										
+											<ul class="info-list">
+												<li><span class="inf">Email</span>  <span class="value">ron13chatterjee@gmail.com</span></li>
+												<li><span class="inf">Phone</span>  <span class="value"> +91 8697566869</span></li>
+												<li><span class="inf">Skype</span>  <span class="value">ron13chatterjee@gmail.com</span></li>
+											</ul>
+											
+										</div>
+
+
+									</div>
+									<!--End row-->
+	
+	                            </div>
+
+                            </div>
+							<!--End block content-->
+							
+						
+						</div>
+						<!--End content-->
+						
+						
+						
+						
+
+							
+								<!--Main title-->
+
+									<div class="main-title">
+										<h1>professional skills</h1>
+										<div class="divider">
+												<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+	</div>
+	
+	
+	</div>
+										
+										
+										
+									</div>	
+
+								<!--End main title-->
+							
+							
+							
+							
+							
+							<!--Content-->	
+							<div class="content">
+
+									<!--Block content-->	
+									<div class="block-content margBMedium">
+
+
+									<!--Skill design-->
+									<div class=" skill dev">
+
+
+		                               	<!--Row-->	
+										<div class="row">
+											
+											<div class="vc">
+
+											<div class="col-md-11">
+
+												<ul class="skills-list clearfix">
+												<li>
+													<h4>C/C++</h4>
+													<div class="progress">
+													<div class="percentage">
+													85%
+													</div>
+													</div>
+												</li>
+												<li>
+													<h4>Python</h4>
+														<div class="progress">
+														<div class="percentage">
+														70%
+														</div>
+														</div>
+												</li>
+												<li>
+													<h4>HTML/CSS</h4>
+														<div class="progress">
+														<div class="percentage">
+														80%
+														</div>
+														</div>
+												</li>
+												<li>
+													<h4>PHP</h4>
+														<div class="progress">
+														<div class="percentage">
+														85%
+														</div>
+														</div>
+												</li>
+												<li>
+													<h4>MySql</h4>
+														<div class="progress">
+														<div class="percentage">
+														75%
+														</div>
+														</div>
+												</li>
+												<li>
+														<h4>Codeigniter Framework</h4>
+														<div class="progress">
+														<div class="percentage">
+														85%
+														</div>
+														</div>
+													</li>
+
+											</ul>
+
+											</div>
+
+
+											<div class="col-md-1">
+												<div class="title dev">
+													<span>Coding </span>
+												</div>
+											</div>
+											
+											</div>
+
+										</div>
+										<!--End row-->
+
+		                            </div>
+									<!--End skill design-->
+
+									</div>
+									<!--End block content-->
+
+
+										<!--Block content-->	
+										<div class="block-content">
+
+
+										<!--Skill design-->
+										<div class=" skill prs">
+
+
+			                               	<!--Row-->	
+											<div class="row ">
+												
+												<div class="vc">
+
+												<div class="col-md-11">
+
+													<ul class="skills-list clearfix">
+													<li>
+														<h4>Adobe Photoshop</h4>
+															<div class="progress">
+															<div class="percentage">
+															65%
+															</div>
+															</div>
+													</li>
+													<li>
+														<h4>IPYTHON</h4>
+															<div class="progress">
+															<div class="percentage">
+															75%
+															</div>
+															</div>
+													</li>
+													<li>
+														<h4>MS-OFFICE</h4>
+															<div class="progress">
+															<div class="percentage">
+															70%
+															</div>
+															</div>
+													</li>
+													<li>
+													<h4>VIM</h4>
+														<div class="progress">
+														<div class="percentage">
+														70%
+														</div>
+														</div>
+													</li>
+													<li>
+													<h4>Sublime Text</h4>
+														<div class="progress">
+														<div class="percentage">
+														80%
+														</div>
+														</div>
+													</li>
+													
+													
+												
+													
+													
+
+
+												</ul>
+
+												</div>
+
+
+												<div class="col-md-1">
+													<div class="title prs">
+														<span>Tools</span>
+													</div>
+												</div>
+												
+												
+												</div>
+											</div>
+											<!--End row-->
+
+			                            </div>
+										<!--End skill design-->
+
+										</div>
+										<!--End block content-->
+									
+
+
+							
+							</div>
+							<!--End content-->
+							
+							
+							
+							
+							
+							<!--Main title-->
+							
+								<div class="main-title">
+									<h1>experience</h1>
+										<div class="divider">
+												<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+	</div>
+	</div>
+								</div>	
+								
+							<!--End main title-->
+								
+								
+								
+								
+								
+								
+								<!--Content-->	
+								<div class="content">
+
+									<!--Block content-->	
+									<div class="block-content ">
+
+
+									<!--Timeline-->
+									<div class="timeline experience">
+
+
+		                               	<!--Row-->	
+										<div class="row ">
+											
+											
+											<div class="col-md-12">
+												
+												
+												<!--Experience holder-->	
+												<div class="exp-holder margTop">
+													
+													
+												<!--Experience-->
+												<div class="exp">
+												<div class="hgroup" >
+													<h4>Backend Development Intern - Krazy Table unit of Unitelworks Pvt. Ltd. </h4>
+													<h6><i class="icon-calendar"></i>6th June 2016 - 6th July 2016</h6>
+												</div>
+												<p>Was responsible as a backend intern to make RESTful APIs to handle requests from android app and also made and managed the main website backend.The APIs were made following the MVC model and sent JSON data as response.</p>
+												</div>
+												<!--End experience-->
+												
+												
+												
+												<!--Experience-->
+												<div class="exp">
+												<div class="hgroup" >
+													<h4>Event Co-coordinator and Backend head – Shootball event of MUKTI '16, the FOSS festival of NIT Durgapur. </h4>
+													<h6><i class="icon-calendar"></i>December 2015 - January 2016</h6>
+												</div>
+													<p>An online webapp hosted in MUKTI 2016, the Annual FOSS Fest of NIT Durgapur. This was an        interactive webapp which allowed users to buy a football team and then choose the players for their team   	        from a database. Each player is allotted with certain points and money amount. The player data was 		        scraped  from the internet using python.</p>
+												</div>
+												<!--End experience-->
+												
+												
+												
+													<!--Experience-->
+													<div class="exp">
+													<div class="hgroup" >
+														<h4>Software Development Intern – FOSSEE, IIT-Bombay </h4>
+														<h6><i class="icon-calendar"></i>November 2015 - December 2015</h6>
+													</div>
+													<p>Converted solved examples of the textbook, ‘Design With Operational Amplifiers And Analog Integrated Circuits’ into an IPYTHON notebook using various python scientific and graph plotting libraries.</p>
+													</div>
+													<!--End experience-->
+												
+												
+												</div>
+												<!--End experience holder-->
+											</div>
+											
+										
+										</div>
+										<!--End row-->
+
+		                            </div>
+									<!--End timeline-->
+
+									</div>
+									<!--End block content-->
+
+
+						</div>
+						<!--End content-->
+						
+						
+						
+						
+						
+						
+							
+							<!--Main title-->
+							
+								<div class="main-title">
+									<h1>education</h1>
+										<div class="divider">
+												<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+	</div>
+	</div>
+								</div>	
+								
+							<!--End main title-->
+
+
+
+
+
+									<!--Content-->	
+									<div class="content">
+
+										<!--Block content-->	
+										<div class="block-content">
+
+
+										<!--Timeline-->
+										<div class="timeline education">
+
+
+			                               	<!--Row-->	
+											<div class="row ">
+
+
+												<div class="col-md-12">
+
+
+													<!--Experience holder-->	
+													<div class="exp-holder margTop">
+
+
+													<!--Experience-->
+													<div class="exp">
+													<div class="hgroup" >
+														<h4>Bachelor of Technology in Computer Science and Engineering – National Institute of Technology, Durgapur</h4>
+														<h6><i class="icon-calendar"></i>July 2014 - <span class = "current">Current</span></h6>
+													</div>
+																<p>CGPA - 8.74 ( upto 4th semester )</p>
+													</div>
+													<!--End experience-->
+
+
+
+													<!--Experience-->
+													<div class="exp">
+													<div class="hgroup" >
+														<h4>ISC - Don Bosco School, Liluah </h4>
+														<h6><i class="icon-calendar"></i>April 2012 - May 2014</h6>
+													</div>
+																<p>96%</p>													</div>
+													<!--End experience-->
+
+
+
+														<!--Experience-->
+														<div class="exp">
+														<div class="hgroup" >
+															<h4>ICSE – Don Bosco School, Liluah </h4>
+															<h6><i class="icon-calendar"></i>April 2008 - April 2012</h6>
+														</div>
+																	<p>90.8%</p>														</div>
+														<!--End experience-->
+
+
+													</div>
+													<!--End experience holder-->
+												</div>
+
+
+											</div>
+											<!--End row-->
+
+			                            </div>
+										<!--End timeline-->
+
+										</div>
+										<!--End block content-->
+
+
+							</div>
+							<!--End content-->
+							<div class="main-title">
+									<h1>positions of responsibilty</h1>
+										<div class="divider">
+												<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+	</div>
+	</div>
+								</div>	
+								
+							<!--End main title-->
+
+
+
+
+
+									<!--Content-->	
+									<div class="content">
+
+										<!--Block content-->	
+										<div class="block-content">
+
+
+										<!--Timeline-->
+										<div class="timeline education">
+
+
+			                               	<!--Row-->	
+											<div class="row ">
+
+
+												<div class="col-md-12">
+
+
+													<!--Experience holder-->	
+													<div class="exp-holder margTop">
+
+
+													<!--Experience-->
+													<div class="exp">
+													<div class="hgroup" >
+														<h4>Core Member – GNU/LINUX USERS' GROUP, NIT Durgapur</h4>
+														<h6><i class="icon-calendar"></i>January 2015 - <span class = "current">Current</span></h6>
+													</div>
+													</div>
+													<!--End experience-->
+
+
+
+													<!--Experience-->
+													<div class="exp">
+													<div class="hgroup" >
+														<h4>Member - QUIZINC, The official Quizzing Club of NIT Durgapur </h4>
+														<h6><i class="icon-calendar"></i>January 2015 - <span class = "current">Current</span></h6>
+													</div>
+													</div>
+													<!--End experience-->
+
+
+
+														<!--Experience-->
+														<div class="exp">
+													<div class="hgroup" >
+														<h4>Fest Coordinater - MUKTI '16, The annual FOSS fest of NIT Durgapur </h4>
+														<h6><i class="icon-calendar"></i>January 2016</h6>
+													</div>
+													</div>
+														<!--End experience-->
+														<div class="exp">
+													<div class="hgroup" >
+														<h4>Fest Coordinater - The Quizzitch Cup '16, The annual Quizzing fest of NIT Durgapur </h4>
+														<h6><i class="icon-calendar"></i>January 2016</h6>
+													</div>
+													</div>
+
+													</div>
+														<div class="exp">
+													<div class="hgroup" >
+														<h4>Vice President - The Space Byte Club, The Technology Club of Don Bosco School, Liluah </h4>
+														<h6><i class="icon-calendar"></i>April 2013 - April 2014</h6>
+													</div>
+													</div>
+													<!--End experience holder-->
+												</div>
+
+
+											</div>
+											<!--End row-->
+
+			                            </div>
+										<!--End timeline-->
+
+										</div>
+										<!--End block content-->
+
+
+							</div>
+							<!--End content-->
+							
+									<!--Button-->
+									<div class="button margTop ofsInTop tCenter">
+											
+											<div class="divider">
+													<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+		<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+		</svg>
+		</div>
+		</div>
+										
+										
+		                               	<!--Row-->	
+										<div class="row ">
+											
+											
+											<div class="col-md-12">
+												<a class="but opc-1 ico" href="#">Download my cv</a>
+											</div>
+										
+										
+										
+											</div>
+											<!--End row-->
+
+
+			                            </div>
+										<!--End button-->
+
+
+						
+						</div>
+						<!--End about-->
+
+					</section>
+						<!--End about tab-->
+						
+						
+						
+						
+				
+				
+								<!--Portfolio Tab-->
+							<section id="portfolio" class="bgWhite ofsInBottom">
+
+								<!--Portfolio -->
+								<div class="portfolio">
+
+									<!--Main title-->
+
+										<div class="main-title">
+											<h1>my works</h1>
+												<div class="divider">
+														<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+			<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+			</svg>
+			</div>
+			</div>
+										</div>	
+
+									<!--End main title-->
+
+
+
+
+								<!--Content-->	
+								<div class="content">
+
+									<!--Block content-->	
+									<div class="block-content ">
+
+									<!--Works-->
+									<div class="works">
+										
+										
+										
+										
+									<!--Row-->	
+									<div class="row">
+										
+										<div class="block-filter tCenter">
+											<ul id="category" class="filter">
+												<li><a data-filter="all" href="#" class="active">all</a></li>
+												<li><a data-filter="web" href="#">Website Backend</a></li>
+												<li><a data-filter="graphic" href="#">Software Development</a></li>
+										</ul>
+
+										</div>
+										
+										
+									</div>
+									<!--End row-->
+									
+									
+									
+									
+									
+									<!--Row-->
+									<div class="row">
+										
+										<div class="divider-m tCenter margTSSmall margBSmall clearfix">
+											<div class="col-md-12">
+												<div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</div>
+											</div>
+										</div>
+									</div>
+									<!--End row-->
+									
+									
+									
+									
+									<!--Row-->	
+									<div class="row">
+										
+										<ul class="work">
+										
+										<li class="col-md-4 ">
+											
+											<!--Item-->	
+											<div class="item web">
+											<a  target = "_blank" href="https://www.krazytable.in">
+												<div class="desc">
+												<h3 class="proj-desc">Krazy Table
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Backend Development</span></h3>
+												</div>
+												
+												<img alt="" src="img/portfolio/1.png">
+											</a>
+
+										</div>
+										<!--End item-->	
+										
+										</li>
+										
+									
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item web">
+											<a target="_blank" href="https://github.com/RonChatterjee/myShootball">
+												<div class="desc">
+												<h3 class="proj-desc">Shootball
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Backend Development</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/2.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item graphic">
+											<a target="_blank" href="http://tbc-python.fossee.in/book-details/865/">
+												<div class="desc">
+												<h3 class="proj-desc">FOSSEE, IIT-Bombay 
+	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+												<span>Software Development</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/3.png">
+												
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>								
+										
+										</ul>
+										
+										</div>
+										<!--End row-->
+
+										
+										
+										
+
+
+		                            </div>
+									<!--End works-->
+									
+									<div class="clearfix"></div>
+
+									</div>
+									<!--End block content-->
+									
+									
+									
+									</div>
+									<!--End content-->
+									
+									
+									
+									
+									
+									
+									<!--Button-->
+									<div class="button ofsInTop tCenter clearfix">
+											
+											<div class="divider">
+													<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+		<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+		</svg>
+		</div>
+		</div>
+										
+										
+		                               	<!--Row-->	
+										<div class="row ">
+											
+											
+											<div class="col-md-12">
+												<a class="but opc-1 ico" href="#">Download my cv</a>
+												
+											</div>
+										
+										
+										
+											</div>
+											<!--End row-->
+
+
+			                            </div>
+										<!--End button-->
+
+									
+
+						
+										</div>
+										<!--End portfolio-->
+
+									</section>
+										<!--End portfolio tab-->
+										
+															
+							
+
+											<!--Contact Tab-->
+										<section id="contact" class="bgWhite ofsInBottom">
+
+											<!--Contact -->
+											<div class="contact">
+
+												<!--Main title-->
+
+													<div class="main-title">
+														<h1>map location</h1>
+															<div class="divider">
+																	<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+						<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+						<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+							29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+						</svg>
+						</div>
+						</div>
+													</div>	
+
+												<!--End main title-->
+
+
+
+
+											<!--Content-->	
+											<div class="content">
+
+												<!--Block content-->	
+												<div class="block-content ">
+
+												<!--Map-->
+												<div class="block-map">
+													
+													<!--Row-->
+													<div class="row">
+													
+													
+													<div class="col-md-12">
+
+															<div id="map"></div>
+
+													</div>
+													
+													</div>
+													<!--End row-->
+
+				                            </div>
+											<!--End map-->
+
+											</div>
+											<!--End block content-->
+
+
+
+											</div>
+											<!--End content-->
+											
+											
+											
+											
+											
+												<!--Main title-->
+
+													<div class="main-title">
+														<h1>contact info</h1>
+															<div class="divider">
+																	<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+						<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+						<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+							29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+						</svg>
+						</div>
+						</div>
+													</div>	
+
+												<!--End main title-->
+												
+												
+												
+												
+										<!--Content-->	
+										<div class="content">
+
+											<!--Block content-->	
+											<div class="block-content ">
+
+											<!--Info-->
+											<div class="block-info">
+												
+												<!--Row-->
+												<div class="row">
+
+												<div class="col-md-12">
+
+													<div class="info-holder   margTMedium">
+
+													<!--Address info-->	
+													<div class="address-info">
+													<i class="icon-location"></i>
+													<p>5/C/4, T.N.Chatterjee Street <br>Kolkata, West Bengal, India - 700090.</p>
+													</div>
+													<!--End address info-->
+
+
+													<!--Contact info-->
+													<div class="contact-info tCenter">
+													<ul>
+														<li><div class="ico"><i class="icon-mail"></i></div>
+														<p>ron13chatterjee@gmail.com </p></li>
+														<li><div class="ico"><i class="icon-phone"></i></div>
+														<p>+91 8697566869</p></li>
+													</ul>
+													</div>
+													<!--End contact info-->	
+
+													</div>
+
+												</div>
+												
+												</div>
+												<!--End row-->
+
+			                            </div>
+										<!--End info-->
+
+										</div>
+										<!--End block content-->
+
+
+
+										</div>
+										<!--End content-->
+										
+										
+										
+										
+										
+				
+				
+										<!--Main title-->
+
+											
+										<!--Button-->
+										<div class="button ofsInTop tCenter">
+
+												<div class="divider">
+														<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+			<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+			</svg>
+			</div>
+			</div>
+
+
+			                               	<!--Row-->	
+											<div class="row ">
+
+
+												<div class="col-md-12">
+													<a class="but opc-1 ico" href="#">Download my cv</a>
+
+												</div>
+
+
+
+												</div>
+												<!--End row-->
+
+
+				                            </div>
+											<!--End button-->
+
+
+
+
+											</div>
+											<!--End contact-->
+
+										</section>
+											<!--End contact tab-->
+													
+
+		</div>
+		<!--End right content-->
+		
+		
+			</div>
+			<!--End  row-->
+		
+		
+		</div>
+		<!--End  container-->
+		
+	
+
+
+</div>
+<!--End wrapper-->
+
+				
+	
+<!--Javascript-->	
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jquery-migrate-1.2.1.js" type="text/javascript"></script>			
+<script src="js/owl.carousel.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/placeholders.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/Switcher/switcher.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+
+
+<script>
+
+(function($) {
+  "use strict";
+
+$(document).ready(function(){
+
+	$('#wrapper').easytabs({
+	animate			: true,
+	updateHash		: false,
+	transitionIn	:'fadeIn',
+	transitionOut	:'fadeOut',
+	animationSpeed	:100,
+	tabActiveClass	:'active',
+	tabs            :' #main-nav.tabbed > ul > li ',
+	transitionInEasing: 'linear',
+  	transitionOutEasing: 'linear'	
+
+});
+
+
+//---------------------------------- Google map location -----------------------------------------//
+
+
+$('#wrapper').bind('easytabs:after', function() {
+
+
+		
+		
+		var styles = [
+				        {
+				            stylers: [
+				                { saturation: -100 }
+
+				            ]
+				        },{
+				            featureType: 'road',
+				            elementType: 'geometry',
+				            stylers: [
+				                { hue: "#74b7b0" },
+				                { visibility: 'simplified' }
+				            ]
+				        },{
+				            featureType: 'road',
+				            elementType: 'labels',
+				            stylers: [
+				                { visibility: 'on' }
+				            ]
+				        }
+				      ],
+
+				       lat = 22.639113,
+				       lng = 88.378952,
+
+
+
+
+
+				      customMap = new google.maps.StyledMapType(styles,
+				          {name: 'Styled Map'}),
+
+
+				      mapOptions = {
+				          zoom: 14,
+						scrollwheel: false,
+						disableDefaultUI: true,
+				          center: new google.maps.LatLng( lat, lng ),
+				          mapTypeControlOptions: {
+				              mapTypeIds: [google.maps.MapTypeId.ROADMAP]
+				          }
+				      },
+				      map = new google.maps.Map(document.getElementById('map'), mapOptions),
+				      myLatlng = new google.maps.LatLng( lat, lng ),
+
+
+
+
+				      marker = new google.maps.Marker({
+				        position: myLatlng,
+				        map: map,
+						icon: {
+						            url: 'img/marker.png',
+						            scaledSize: new google.maps.Size(26, 42)
+						        }
+				      });
+
+
+
+
+
+				      map.mapTypes.set('map_style', customMap);
+				      map.setMapTypeId('map_style');
+
+
+
+
+		
+
+		
+   
+});
+
+
+
+
+
+
+
+
+
+//---------------------------------- End google map location -----------------------------------------//
+
+
+});
+
+})(jQuery);
+
+</script>
+
+
+<!-- Google analytics -->
+
+
+<!-- End google analytics -->
+
+
+    </body>
 </html>
